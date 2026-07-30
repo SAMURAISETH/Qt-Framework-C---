@@ -4,11 +4,9 @@
 
 class Text : public QLabel
 {
-    public:
+public:
 
-        Text(const char* text)
-            : QLabel(text)
-        {
+    Text(const char* text);
 
-        }
+    void setTextValue(const char* text);
 };

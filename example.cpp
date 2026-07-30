@@ -13,10 +13,20 @@ int main(){
         400
     );
 
-    Text text("Hello Window");
+    Text text("Waiting...");
+
     Button button("Click Me");
 
+    button.onClick([&](){
+        text.setTextValue("Clicked!");
+    });
+
+
     window.add(&text);
+    /* make features more advance but simple   
+        button.onClick([](){
+            std::cout << "Clicked!";
+        })*/
     window.add(&button);
 
     window.show();

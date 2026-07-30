@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/new.dir/link.d CMakeFiles/new.dir/example.cpp.o CMakeFiles/new.dir/Framework.cpp.o CMakeFiles/new.dir/Window.cpp.o CMakeFiles/new.dir/Button.cpp.o CMakeFiles/new.dir/Text.cpp.o -o new  /usr/lib/libQt6Widgets.so.6.11.1 /usr/lib/libQt6Gui.so.6.11.1 /usr/lib/libGLX.so /usr/lib/libOpenGL.so /usr/lib/libQt6Core.so.6.11.1
