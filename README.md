@@ -10,4 +10,7 @@ There are not much you can do with the functions inside if this **Framework** ri
 like you can't control what happens when you click on the button using the button function and you cannot control where the elements i like to call it, but *PS* *enjoy :)*
 1. File Organization(you'll have to do your own organization)
 # Future
-In the Future we will be adding ways to have more control over the things you have on your window like the element position as you cannot control where things are right now which is a very bad or shitty limitation for now but this is early code/project so it gets better or worse idk i don't control time so we'll see PS Make this framework better if you want my contacts are 
+In the Future we will be adding ways to have more control over the things you have on your window like the element position as you cannot control where things are right now which is a very bad or shitty limitation for now but this is early code/project so it gets better or worse idk i don't control time so we'll see PS Make this framework better if you want my contacts are
+and maybe add code docs to README or just make a website on it:)
+
+
