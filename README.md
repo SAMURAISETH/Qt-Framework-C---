@@ -14,3 +14,52 @@ In the Future we will be adding ways to have more control over the things you ha
 and maybe add code docs to README or just make a website on it:)
 
 
+# How To Set up Ready to build/run
+ first what you wanna do is add a file called CMakeLists.txt and add 
+ ```cmake
+  cmake_minimum_required(VERSION 3.16)
+
+project(project_name)
+
+set(CMAKE_CXX_STANDARD 17)
+
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+
+add_executable(prject_name
+    example.cpp
+    Framework.cpp
+    Window.cpp
+    Button.cpp
+    Text.cpp
+)
+
+target_link_libraries(project_name
+    Qt6::Widgets
+)
+```
+
+after that make a sh file(optional)
+```sh
+
+rm -rf build
+mkdir build
+cd build
+cmake ../CMakeLists.txt
+make
+./project_name
+```
+
+but if you'll wanna do it your self to build without errors: 
+step 1 `mkdir build(name you wan't)`
+
+
+step 2 `cd build`
+
+
+step 3 `cmake ../CMakeLists.txt`
+
+
+step 4 `make`
+
+
+step 5 run the `executable` inside of build called `projet_name` or the executable your `CMakeLists` says.
