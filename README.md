@@ -54,7 +54,7 @@ Create a file named `CMakeLists.txt` with the following contents:
 ```cmake
 cmake_minimum_required(VERSION 3.16)
 
-project(project_name)
+project(Qt-Framework-C---)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -111,7 +111,8 @@ mkdir build
 cd build
 cmake ..
 make
-./project_name
+./Qt-Framework-C---
+
 ```
 
 Replace `project_name` with the executable name defined in your `CMakeLists.txt`.
