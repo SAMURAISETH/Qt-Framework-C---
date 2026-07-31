@@ -19,13 +19,14 @@ and maybe add code docs to README or just make a website on it:)
  ```cmake
   cmake_minimum_required(VERSION 3.16)
 
-project(project_name)
+project(Qt-Framework-C---)
 
 set(CMAKE_CXX_STANDARD 17)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
-add_executable(prject_name
+add_executable(Qt-Framework-C---
+
     example.cpp
     Framework.cpp
     Window.cpp
@@ -46,7 +47,8 @@ mkdir build
 cd build
 cmake ../CMakeLists.txt
 make
-./project_name
+./Qt-Framework-C---
+
 ```
 
 but if you'll wanna do it your self to build without errors: 
