@@ -14,6 +14,11 @@ In the Future we will be adding ways to have more control over the things you ha
 and maybe add code docs to README or just make a website on it:)
 
 
+#Requirements
+you'll need qt6 as this framework currently use qt6 becuase its a frame on a framework, you'll need cmake inorder to work ps idk(for now). 
+
+
+
 # How To Set up Ready to build/run
  first what you wanna do is add a file called CMakeLists.txt and add 
  ```cmake
