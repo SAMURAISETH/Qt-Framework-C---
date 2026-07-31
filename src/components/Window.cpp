@@ -7,7 +7,7 @@ Window::Window(const char* title, int width, int height)
     window->setWindowTitle(title);
     window->resize(width, height);
 
-    layout = new(QVBoxLayout);
+    layout = new QVBoxLayout;
 
     window->setLayout(layout);
 

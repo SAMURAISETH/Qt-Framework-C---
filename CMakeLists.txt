@@ -7,12 +7,17 @@ set(CMAKE_CXX_STANDARD 17)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 add_executable(new
-    example.cpp
-    Framework.cpp
-    Window.cpp
-    Button.cpp
-    Text.cpp
-    Widget.cpp
+    examples/example.cpp
+    src/Framework.cpp
+    src/components/Window.cpp
+    src/components/Button.cpp
+    src/components/Text.cpp
+    src/components/Widget.cpp
+)
+
+target_include_directories(new PRIVATE
+    src
+    src/components
 )
 
 target_link_libraries(new
