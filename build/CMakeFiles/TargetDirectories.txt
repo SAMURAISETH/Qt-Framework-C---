@@ -1,3 +1,0 @@
-/home/seth/Desktop/new/build/CMakeFiles/new.dir
-/home/seth/Desktop/new/build/CMakeFiles/edit_cache.dir
-/home/seth/Desktop/new/build/CMakeFiles/rebuild_cache.dir
