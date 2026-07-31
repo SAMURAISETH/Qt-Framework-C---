@@ -1,28 +1,58 @@
-# Read Me
-Not much to preview as this is a starter but look in **example.cpp** and you see a example c plus plus file that will show you a example of how the framework looks like in every way possible 
+# C++ GUI Framework
 
-## Pros
-1. less lines of code
-2. This is a little project so more to come
+A simple Qt6-based C++ GUI framework designed to reduce boilerplate and make creating basic GUI applications easier.
 
-## Cons
-There are not much you can do with the functions inside if this **Framework** right now
-like you can't control what happens when you click on the button using the button function and you cannot control where the elements i like to call it, but *PS* *enjoy :)*
-1. File Organization(you'll have to do your own organization)
-# Future
-In the Future we will be adding ways to have more control over the things you have on your window like the element position as you cannot control where things are right now which is a very bad or shitty limitation for now but this is early code/project so it gets better or worse idk i don't control time so we'll see PS Make this framework better if you want my contacts are
-and maybe add code docs to README or just make a website on it:)
+> **Note:** This project is still in its early stages. Features are limited, but more functionality is planned over time.
 
+## Getting Started
 
-# Requirements
-you'll need qt6 as this framework currently use qt6 becuase its a frame on a framework, you'll need cmake inorder to work ps idk(for now). 
+The best place to learn how the framework works is by looking at **`example.cpp`**, which demonstrates the available features and shows how the framework is intended to be used.
 
+## Features
 
+* Less boilerplate code compared to using Qt directly.
+* Simple and easy to understand.
+* Good starting point for learning or experimenting with GUI development.
 
-# How To Set up Ready to build/run
- first what you wanna do is add a file called CMakeLists.txt and add 
- ```cmake
-  cmake_minimum_required(VERSION 3.16)
+## Current Limitations
+
+This framework is still a work in progress. Some current limitations include:
+
+* Button callbacks are not yet customizable.
+* UI element positions cannot currently be controlled.
+* File organization is left entirely up to the user.
+* Only a small set of GUI components is currently available.
+
+## Future Plans
+
+Some features planned for future releases include:
+
+* Custom button event handlers.
+* Positioning and layout controls for UI elements.
+* More built-in GUI components.
+* Improved documentation.
+* A dedicated documentation website.
+
+Contributions, suggestions, and improvements are always welcome.
+
+---
+
+# Building the Project
+
+## Requirements
+
+Before building, make sure you have:
+
+* A C++17 compatible compiler
+* CMake 3.16 or newer
+* Qt6 (Widgets module)
+
+## Create a `CMakeLists.txt`
+
+Create a file named `CMakeLists.txt` with the following contents:
+
+```cmake
+cmake_minimum_required(VERSION 3.16)
 
 project(Qt-Framework-C---)
 
@@ -30,8 +60,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
-add_executable(Qt-Framework-C---
-
+add_executable(project_name
     example.cpp
     Framework.cpp
     Window.cpp
@@ -44,29 +73,73 @@ target_link_libraries(project_name
 )
 ```
 
-after that make a sh file(optional)
+## Build
+
+### Option 1: Build Script (Linux/macOS)
+
+Create a script named `build.sh`:
+
 ```sh
+#!/bin/sh
 
 rm -rf build
 mkdir build
 cd build
-cmake ../CMakeLists.txt
+
+cmake ..
+make
+
+./project_name
+```
+
+Make it executable:
+
+```sh
+chmod +x build.sh
+```
+
+Then run:
+
+```sh
+./build.sh
+```
+
+### Option 2: Manual Build
+
+```sh
+mkdir build
+cd build
+cmake ..
 make
 ./Qt-Framework-C---
 
 ```
 
-but if you'll wanna do it your self to build without errors: 
-step 1 `mkdir build(name you wan't)`
+Replace `project_name` with the executable name defined in your `CMakeLists.txt`.
 
+## Project Structure
 
-step 2 `cd build`
+A typical project using this framework might look like:
 
+```text
+project/
+├── CMakeLists.txt
+├── example.cpp
+├── Framework.cpp
+├── Window.cpp
+├── Button.cpp
+├── Text.cpp
+└── build/
+```
 
-step 3 `cmake ../CMakeLists.txt`
+## Contributing
 
+This project is still in its early stages, so contributions are appreciated. Feel free to improve the framework, add new features, fix bugs, or improve the documentation.
 
-step 4 `make`
+## License
 
+This project is licensed under the **GNU General Public License v2.0 (GPL-2.0)**.
 
-step 5 run the `executable` inside of build called `projet_name` or the executable your `CMakeLists` says.
+You are free to use, modify, and distribute this software under the terms of the GPLv2. Any derivative works must also be distributed under the same license.
+
+For the full license text, see the `LICENSE` file included with this project.

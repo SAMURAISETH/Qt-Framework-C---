@@ -1,7 +1,8 @@
+#!/bin/bash
+set -e
 
-rm -rf build
-mkdir build
-cd build
-cmake ../CMakeLists.txt
-make
-./new
+# Build
+cmake -S . -B build
+cmake --build build
+
+./build/new

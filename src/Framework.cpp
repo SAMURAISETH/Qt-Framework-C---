@@ -4,7 +4,7 @@
 App::App()
 {
     static int argc = 1;
-    static char* argv[] = {(char*)"app"};
+    static char* argv[] = { (char*)"app" };
 
     qtApp = new QApplication(argc, argv);
 }
