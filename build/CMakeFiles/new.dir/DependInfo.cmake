@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/seth/Desktop/new/Button.cpp" "CMakeFiles/new.dir/Button.cpp.o" "gcc" "CMakeFiles/new.dir/Button.cpp.o.d"
   "/home/seth/Desktop/new/Framework.cpp" "CMakeFiles/new.dir/Framework.cpp.o" "gcc" "CMakeFiles/new.dir/Framework.cpp.o.d"
   "/home/seth/Desktop/new/Text.cpp" "CMakeFiles/new.dir/Text.cpp.o" "gcc" "CMakeFiles/new.dir/Text.cpp.o.d"
+  "/home/seth/Desktop/new/Widget.cpp" "CMakeFiles/new.dir/Widget.cpp.o" "gcc" "CMakeFiles/new.dir/Widget.cpp.o.d"
   "/home/seth/Desktop/new/Window.cpp" "CMakeFiles/new.dir/Window.cpp.o" "gcc" "CMakeFiles/new.dir/Window.cpp.o.d"
   "/home/seth/Desktop/new/example.cpp" "CMakeFiles/new.dir/example.cpp.o" "gcc" "CMakeFiles/new.dir/example.cpp.o.d"
   "" "new" "gcc" "CMakeFiles/new.dir/link.d"

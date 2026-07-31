@@ -344,9 +344,9 @@ CMakeFiles/new.dir/example.cpp.o: /home/seth/Desktop/new/example.cpp \
  /usr/include/qt6/QtWidgets/qlayout.h \
  /usr/include/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/qt6/QtWidgets/qgridlayout.h /home/seth/Desktop/new/Text.hpp \
- /usr/include/qt6/QtWidgets/QLabel /usr/include/qt6/QtWidgets/qlabel.h \
- /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtGui/qpicture.h \
- /usr/include/qt6/QtCore/qiodevice.h \
+ /home/seth/Desktop/new/Widget.hpp /usr/include/qt6/QtWidgets/QLabel \
+ /usr/include/qt6/QtWidgets/qlabel.h /usr/include/qt6/QtWidgets/qframe.h \
+ /usr/include/qt6/QtGui/qpicture.h /usr/include/qt6/QtCore/qiodevice.h \
  /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
  /home/seth/Desktop/new/Button.hpp /usr/include/qt6/QtWidgets/QPushButton \
  /usr/include/qt6/QtWidgets/qpushbutton.h \

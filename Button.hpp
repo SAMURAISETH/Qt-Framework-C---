@@ -2,8 +2,9 @@
 
 #include <QPushButton>
 #include <functional>
+#include "Widget.hpp"
 
-class Button : public QPushButton
+class Button : public QPushButton, public Widget
 {
 public:
     Button(const char* text);

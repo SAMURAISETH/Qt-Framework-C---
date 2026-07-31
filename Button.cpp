@@ -1,7 +1,8 @@
 #include "Button.hpp"
 
 Button::Button(const char* text)
-    : QPushButton(text)
+    : QPushButton(text),
+    Widget(this)
 {
 
 }

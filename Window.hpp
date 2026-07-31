@@ -3,6 +3,7 @@
 #include <QWidget>
 #include <QVBoxLayout>
 
+
 class Window
 {
     private:
@@ -14,4 +15,6 @@ class Window
         
         void add(QWidget* widget);
         void show();
+        void hide();
+        
 };

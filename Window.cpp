@@ -15,10 +15,14 @@ Window::Window(const char* title, int width, int height)
 
 void Window::add(QWidget* widget)
 {
-    layout->addWidget(widget);
+    widget->setParent(window);
 }
 
 void Window::show()
 {
     window->show();
+}
+void Window::hide()
+{
+    window->hide();
 }

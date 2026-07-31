@@ -7,6 +7,7 @@ new: \
   CMakeFiles/new.dir/Window.cpp.o \
   CMakeFiles/new.dir/Button.cpp.o \
   CMakeFiles/new.dir/Text.cpp.o \
+  CMakeFiles/new.dir/Widget.cpp.o \
   /usr/lib/libQt6Widgets.so.6.11.1 \
   /usr/lib/libQt6Gui.so.6.11.1 \
   /usr/lib/libGLX.so \
@@ -102,6 +103,8 @@ CMakeFiles/new.dir/Window.cpp.o:
 CMakeFiles/new.dir/Button.cpp.o:
 
 CMakeFiles/new.dir/Text.cpp.o:
+
+CMakeFiles/new.dir/Widget.cpp.o:
 
 /usr/lib/libQt6Widgets.so.6.11.1:
 

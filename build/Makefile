@@ -201,6 +201,30 @@ Text.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/Text.cpp.s
 .PHONY : Text.cpp.s
 
+Widget.o: Widget.cpp.o
+.PHONY : Widget.o
+
+# target to build an object file
+Widget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/Widget.cpp.o
+.PHONY : Widget.cpp.o
+
+Widget.i: Widget.cpp.i
+.PHONY : Widget.i
+
+# target to preprocess a source file
+Widget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/Widget.cpp.i
+.PHONY : Widget.cpp.i
+
+Widget.s: Widget.cpp.s
+.PHONY : Widget.s
+
+# target to generate assembly for a file
+Widget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new.dir/build.make CMakeFiles/new.dir/Widget.cpp.s
+.PHONY : Widget.cpp.s
+
 Window.o: Window.cpp.o
 .PHONY : Window.o
 
@@ -267,6 +291,9 @@ help:
 	@echo "... Text.o"
 	@echo "... Text.i"
 	@echo "... Text.s"
+	@echo "... Widget.o"
+	@echo "... Widget.i"
+	@echo "... Widget.s"
 	@echo "... Window.o"
 	@echo "... Window.i"
 	@echo "... Window.s"

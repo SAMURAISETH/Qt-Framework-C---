@@ -1,7 +1,8 @@
 #include "Text.hpp"
 
 Text::Text(const char* text)
-    : QLabel(text)
+    : QLabel(text),
+    Widget(this)
 {
 
 }

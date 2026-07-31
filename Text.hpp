@@ -1,8 +1,8 @@
 #pragma once
-
+#include "Widget.hpp"
 #include <QLabel>
 
-class Text : public QLabel
+class Text : public QLabel, public Widget
 {
 public:
 

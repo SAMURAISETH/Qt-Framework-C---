@@ -1,6 +1,7 @@
 CMakeFiles/new.dir/Text.cpp.o: /home/seth/Desktop/new/Text.cpp \
  /usr/include/stdc-predef.h /home/seth/Desktop/new/Text.hpp \
- /usr/include/qt6/QtWidgets/QLabel /usr/include/qt6/QtWidgets/qlabel.h \
+ /home/seth/Desktop/new/Widget.hpp /usr/include/qt6/QtWidgets/QWidget \
+ /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
  /usr/include/c++/16/type_traits \
@@ -144,7 +145,6 @@ CMakeFiles/new.dir/Text.cpp.o: /home/seth/Desktop/new/Text.cpp \
  /usr/include/qt6/QtGui/qtguiexports.h \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsexports.h \
- /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtGui/qwindowdefs.h \
  /usr/include/qt6/QtCore/qobjectdefs.h \
  /usr/include/qt6/QtCore/qnamespace.h /usr/include/qt6/QtCore/qcompare.h \
@@ -325,5 +325,7 @@ CMakeFiles/new.dir/Text.cpp.o: /home/seth/Desktop/new/Text.cpp \
  /usr/include/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
- /usr/include/qt6/QtGui/qpicture.h /usr/include/qt6/QtCore/qiodevice.h \
+ /usr/include/qt6/QtWidgets/QLabel /usr/include/qt6/QtWidgets/qlabel.h \
+ /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtGui/qpicture.h \
+ /usr/include/qt6/QtCore/qiodevice.h \
  /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h

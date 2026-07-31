@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/new.dir/Framework.cpp.o.d"
   "CMakeFiles/new.dir/Text.cpp.o"
   "CMakeFiles/new.dir/Text.cpp.o.d"
+  "CMakeFiles/new.dir/Widget.cpp.o"
+  "CMakeFiles/new.dir/Widget.cpp.o.d"
   "CMakeFiles/new.dir/Window.cpp.o"
   "CMakeFiles/new.dir/Window.cpp.o.d"
   "CMakeFiles/new.dir/example.cpp.o"

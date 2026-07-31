@@ -12,6 +12,7 @@ add_executable(new
     Window.cpp
     Button.cpp
     Text.cpp
+    Widget.cpp
 )
 
 target_link_libraries(new

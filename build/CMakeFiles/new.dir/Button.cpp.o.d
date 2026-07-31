@@ -327,4 +327,5 @@ CMakeFiles/new.dir/Button.cpp.o: /home/seth/Desktop/new/Button.cpp \
  /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
- /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h
+ /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
+ /home/seth/Desktop/new/Widget.hpp /usr/include/qt6/QtWidgets/QWidget
