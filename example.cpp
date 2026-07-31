@@ -9,7 +9,7 @@ int main(){
 
     Window window(
         "example framework",
-        600,
+        400,
         400
     );
 
