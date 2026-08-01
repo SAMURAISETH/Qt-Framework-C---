@@ -13,4 +13,7 @@ class Widget
 
         void setPosition(int x, int y);
         void setSize(int width, int height);
+
+        void setBackgroundColor(const char* color);
+        void setTextColor(const char* color);
 };

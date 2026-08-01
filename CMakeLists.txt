@@ -15,6 +15,7 @@ add_executable(new
     src/components/Widget.cpp
     src/layouts/Layout.cpp
     src/layouts/VerticalLayout.cpp
+    src/layouts/HorizontalLayout.cpp
 )
 
 target_include_directories(new PRIVATE
