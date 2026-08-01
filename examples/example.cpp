@@ -59,6 +59,7 @@ int main()
 
     // Create layout
     VerticalLayout menu(100, 100, 30);
+    // future: window.addLayout(name);
 
 
     menu.add(title);
