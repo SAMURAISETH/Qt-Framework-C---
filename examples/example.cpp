@@ -16,7 +16,7 @@ int main()
 
 
     Window window(
-        "NewFramework Example",
+        "Qt-Framework-C--- Example",
         1000,
         700
     );
@@ -25,7 +25,7 @@ int main()
     // Text
 
     Text* title = window.createText(
-        "NewFramework"
+        "Qt-Framework-C"
     );
 
     title->setFontSize(40);
