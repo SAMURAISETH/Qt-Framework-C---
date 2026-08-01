@@ -1,8 +1,10 @@
-// clean example.cpp better then the other versions
 #include "Framework.hpp"
+
 #include "Window.hpp"
+
 #include "Text.hpp"
 #include "Button.hpp"
+
 #include "VerticalLayout.hpp"
 
 #include <iostream>
@@ -10,72 +12,98 @@
 
 int main()
 {
-    // Create application
     App app;
 
 
-    // Create window
-    Window window("NewFramework Example", 800, 600);
+    Window window(
+        "NewFramework Example",
+        1000,
+        700
+    );
 
 
+    // Text
 
-    // Create text widgets
-    Text* title = window.createText("NewFramework Demo");
+    Text* title = window.createText(
+        "NewFramework"
+    );
 
-    title->setFontSize(35);
+    title->setFontSize(40);
     title->setTextColor("white");
-    title->setBackgroundColor("#333333");
+    title->setBackgroundColor("#222222");
+    title->setPadding(10);
 
 
 
-    Text* info = window.createText("Click the button!");
+    Text* status = window.createText(
+        "Waiting..."
+    );
 
-    info->setFontSize(20);
-    info->setTextColor("yellow");
-
-
-
-    // Create button
-    Button* button = window.createButton("Click Me");
-
-
-    button->setSize(150, 50);
-    button->setBackgroundColor("#0078ff");
-    button->setTextColor("white");
+    status->setFontSize(20);
+    status->setTextColor("yellow");
 
 
 
-    // Button event
-    button->onClick.connect([button, info]()
+    // Button
+
+    Button* button = window.createButton(
+        "Click Me"
+    );
+
+    button->setSize(
+        150,
+        50
+    );
+
+    button->setBackgroundColor(
+        "#0066ff"
+    );
+
+    button->setTextColor(
+        "white"
+    );
+
+    button->setPadding(
+        10
+    );
+
+
+
+    // Event
+
+    button->onClick.connect([status]()
     {
         std::cout << "Button clicked!\n";
 
-        button->setTextValue("Clicked!");
-
-        info->setTextValue("Button was pressed!");
+        status->setTextValue(
+            "Clicked!"
+        );
     });
 
 
 
-    // Create layout
-    VerticalLayout menu(100, 100, 30);
-    // future: window.addLayout(name);
+    // Layout
+
+    VerticalLayout layout(
+        100,
+        100,
+        40
+    );
 
 
-    menu.add(title);
-    menu.add(info);
-    menu.add(button);
+    layout.add(title);
+    layout.add(status);
+    layout.add(button);
 
 
-    // Apply layout
-    menu.update();
+    layout.update();
 
 
 
-    // Show window
+    // Window
+
     window.show();
 
 
-    // Start application
-    return app.run();
+     app.run();
 }
