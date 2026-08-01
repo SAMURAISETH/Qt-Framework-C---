@@ -1,24 +1,22 @@
 #include "Button.hpp"
-
+#include "Widget.hpp"
 Button::Button(const char* text)
     : QPushButton(text),
-    Widget(this)
+      Widget()
 {
-
+    object = this;
+    QObject::connect(
+        this,
+        &QPushButton::clicked,
+        [this]()
+        {
+            onClick.call();
+        }
+    );
 }
+
 
 void Button::setTextValue(const char* text)
 {
     setText(text);
-}
-
-void Button::onClick(std::function<void()> callback)
-{
-    QObject::connect(this, 
-        &QPushButton::clicked, 
-        [callback]()
-        {
-            callback();
-        }
-    );
 }

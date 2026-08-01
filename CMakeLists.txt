@@ -13,11 +13,14 @@ add_executable(new
     src/components/Button.cpp
     src/components/Text.cpp
     src/components/Widget.cpp
+    src/layouts/Layout.cpp
+    src/layouts/VerticalLayout.cpp
 )
 
 target_include_directories(new PRIVATE
     src
     src/components
+    src/layouts
 )
 
 target_link_libraries(new

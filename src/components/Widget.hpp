@@ -8,6 +8,7 @@ class Widget
         QWidget* object;
 
     public:
+        Widget();
         Widget(QWidget* widget);
 
         void setPosition(int x, int y);

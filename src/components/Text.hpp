@@ -9,4 +9,6 @@ public:
     Text(const char* text);
 
     void setTextValue(const char* text);
+
+    void setFontSize(int size);
 };

@@ -1,4 +1,11 @@
 #include "Widget.hpp"
+#include "Text.hpp"
+#include "Button.hpp"
+
+Widget::Widget()
+{
+    object = nullptr;
+}
 
 Widget::Widget(QWidget* widget)
 {
