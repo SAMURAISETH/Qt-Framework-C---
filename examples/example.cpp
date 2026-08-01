@@ -54,10 +54,14 @@ button3->onClick.connect([button3]()
 });
 
 button1->setBackgroundColor("red");
+
 button3->setBackgroundColor("blue");
 button3->setTextColor("black");
 button2->setBackgroundColor("green");
 text->setTextColor("blue");
+
+button1->setPadding(100);
+button1->autoSize();
 
 HorizontalLayout layout(50, 50, 100);
 layout.add(button1);

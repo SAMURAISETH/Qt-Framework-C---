@@ -21,6 +21,8 @@ void Widget::updateStyle()
 
     if(!textColor.isEmpty())
         style += QString("color: %1;").arg(textColor);
+    if(padding >= 0)
+        style += QString("padding: %1px;").arg(padding);
 
     object->setStyleSheet(style);
 }
@@ -38,9 +40,18 @@ void Widget::setBackgroundColor(const char* color)
     backgroundColor = color;
     updateStyle();
 }
+void Widget::autoSize()
+{
+    object->adjustSize();
+}
 
 void Widget::setTextColor(const char* color)
 {
     textColor = color;
+    updateStyle();
+}
+void Widget::setPadding(int value)
+{
+    padding = value;
     updateStyle();
 }
