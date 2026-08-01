@@ -1,11 +1,17 @@
 #pragma once
 
 #include <QWidget>
+#include <QString>
 
 class Widget
 {
     protected:
         QWidget* object;
+        
+        QString backgroundColor;
+        QString textColor;
+
+        void updateStyle();
 
     public:
         Widget();

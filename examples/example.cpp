@@ -50,18 +50,21 @@ button3->onClick.connect([button3]()
 {
     std::cout << button3 << "\n";
     button3->setTextValue("67!!!");
-    button3->setBackgroundColor("red");
-    button3->setTextColor("yellow");
+
 });
 
 button1->setBackgroundColor("red");
+button3->setBackgroundColor("blue");
+button3->setTextColor("black");
 button2->setBackgroundColor("green");
-
+text->setTextColor("blue");
 
 HorizontalLayout layout(50, 50, 100);
 layout.add(button1);
 layout.add(button2);
 layout.add(button3);
+layout.add(text);
+layout.add(text2);
 layout.update();
 
 
