@@ -55,12 +55,16 @@ int main()
         50
     );
 
-    button->setBackgroundColor(
-        "#0066ff"
+    button->setBackgroundColorRGB(
+        -10,
+        300,
+        500
     );
 
-    button->setTextColor(
-        "white"
+    button->setTextColorRGB(
+        256,
+        -50,
+        -70
     );
 
     button->setPadding(

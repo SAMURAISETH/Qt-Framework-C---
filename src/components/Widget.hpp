@@ -23,6 +23,9 @@ class Widget
 
         void setBackgroundColor(const char* color);
         void setTextColor(const char* color);
+        void setTextColorRGB(int r, int g, int b);
+        void setBackgroundColorRGB(int r, int g, int b);
+
 
         void autoSize();
 };

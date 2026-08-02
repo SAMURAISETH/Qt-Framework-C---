@@ -51,6 +51,7 @@ void Window::setVisible(bool visible)
     window->setVisible(visible);
 }
 
+
 void Window::show()
 {
     window->show();
