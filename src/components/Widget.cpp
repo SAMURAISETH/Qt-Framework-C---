@@ -47,7 +47,7 @@ void Widget::setTextColorRGB(int r, int g, int b)
 {
     textColor = QString("rgb(%1, %2, %3)").arg(r).arg(g).arg(b);
     if (r < 0 || r > 255 || g < 0 || g > 255 || b < 0 || b > 255) {
-        qWarning("We have set your color to white because you have entered an invalid RGB value. Please enter a value between 0 and 255 for each color channel.");
+        qWarning("We have set your color to white because you have entered an invalid RGB value. Please enter a value between 0 and 255 for each color channel.\n");
         setTextColorRGB(255, 255, 255);
     }
 
@@ -68,7 +68,7 @@ void Widget::setBackgroundColorRGB(int r, int g, int b)
 {
     backgroundColor = QString("rgb(%1, %2, %3)").arg(r).arg(g).arg(b);
     if (r < 0 || r > 255 || g < 0 || g > 255 || b < 0 || b > 255) {
-        qWarning("We have set your color to black because you have entered an invalid RGB value. Please enter a value between 0 and 255 for each color channel.");
+        qWarning("We have set your color to black because you have entered an invalid RGB value. Please enter a value between 0 and 255 for each color channel.\n");
         setBackgroundColorRGB(0, 0, 0);
     }
 
