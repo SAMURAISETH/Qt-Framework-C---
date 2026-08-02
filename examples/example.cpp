@@ -79,9 +79,15 @@ int main()
     {
         std::cout << "Button clicked!\n";
 
-        status->setTextValue(
+        status->setText(
             "Clicked!"
         );
+        status->setSleepingTime(1000);
+        for (int i = 0; i < 10; i++)
+        {
+            status->setText(i); 
+            status->setSleepingTime(1000);
+        }
     });
 
 

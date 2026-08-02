@@ -1,6 +1,7 @@
 #include "Widget.hpp"
 #include "Text.hpp"
 #include "Button.hpp"
+#include <QTimer>
 
 Widget::Widget()
 {
@@ -30,6 +31,12 @@ void Widget::updateStyle()
 void Widget::setPosition(int x, int y)
 {
     object->move(x, y);
+}
+void Widget::setSleepingTime(int milliseconds)
+{
+    QTimer::singleShot(milliseconds, object, [this]() {
+        object->hide();
+    });
 }
 
 void Widget::setSize(int width, int height)

@@ -1,9 +1,10 @@
 #pragma once
 
 #include <QPushButton>
+#include <sstream>
+
 #include "Widget.hpp"
 #include "Event.hpp"
-
 
 class Button : public QPushButton, public Widget
 {
@@ -12,7 +13,34 @@ public:
     Event onClick;
     Event onHover;
 
-    Button(const char* text);
+    template<typename T>
+    Button(T value)
+        : QPushButton(),
+          Widget()
+    {
+        object = this;
 
-    void setTextValue(const char* text);
+        setTextValue(value);
+
+        QObject::connect(
+            this,
+            &QPushButton::clicked,
+            [this]()
+            {
+                onClick.call();
+            }
+        );
+    }
+
+
+    template<typename T>
+    void setTextValue(T value)
+    {
+        std::stringstream ss;
+        ss << value;
+
+        QPushButton::setText(
+            QString::fromStdString(ss.str())
+        );
+    }
 };
