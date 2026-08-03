@@ -28,13 +28,13 @@ int main()
 
 
     // Text
-std::string hello = "C++ Framework Example";
+    //char hello = "C++ Framework Example";
 
     Text* title = window.createText(
         "Qt-Framework-C"
     );
 
-    Text* subtitle = window.createText(hello);
+    Text* subtitle = window.createText("C++ Framework Example");
 
     title->setFontSize(40);
     title->setTextColor("white");
