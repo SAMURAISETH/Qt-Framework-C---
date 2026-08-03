@@ -1,24 +1,19 @@
+# examples/example.cpp
+
+```cpp
 #include "Framework.hpp"
-
 #include "Window.hpp"
-
 #include "Text.hpp"
-#include <iostream>
-#include <string>
-#include "Widget.hpp"
-#include <sstream>
 #include "Button.hpp"
-
 #include "VerticalLayout.hpp"
 #include "HorizontalLayout.hpp"
 
 #include <iostream>
-
+#include <string>
 
 int main()
 {
     App app;
-
 
     Window window(
         "Qt-Framework-C--- Example",
@@ -26,28 +21,27 @@ int main()
         700
     );
 
-
-    // Text
-std::string hello = "C++ Framework Example";
-
+    // Title
     Text* title = window.createText(
         "Qt-Framework-C"
     );
-
-    Text* subtitle = window.createText(hello);
 
     title->setFontSize(40);
     title->setTextColor("white");
     title->setBackgroundColor("#222222");
     title->setPadding(10);
-    
+
+    // Subtitle
+    std::string hello = "C++ Framework Example";
+
+    Text* subtitle = window.createText(hello);
 
     subtitle->setFontSize(20);
-    subtitle->setTextColor("Yellow");
+    subtitle->setTextColor("yellow");
     subtitle->setBackgroundColor("#222222");
     subtitle->setPadding(5);
-    
 
+    // Status text
     Text* status = window.createText(
         "Waiting..."
     );
@@ -55,70 +49,53 @@ std::string hello = "C++ Framework Example";
     status->setFontSize(20);
     status->setTextColor("yellow");
 
-
-
     // Button
-
     Button* button = window.createButton(
         "Click Me"
     );
 
-    button->setSize(
-        150,
-        50
-    );
+    button->setSize(150, 50);
 
     button->setBackgroundColorRGB(
-        -10,
-        300,
-        500
+        37,
+        99,
+        235
     );
 
     button->setTextColorRGB(
-        256,
-        -50,
-        -70
+        255,
+        255,
+        255
     );
 
-    button->setPadding(
-        10
-    );
-
-
+    button->setPadding(10);
 
     // Event
-    int i = 0;
-    button->onClick.connect([status, &i]()
-    {
-        std::cout << "Button clicked!\n";
+    int count = 0;
 
-        status->setText(
-            "Clicked!"
-        );
-        status->setSleepingTime(1000);
-        
-        status->setText(i);
-        i++;
-        
+    button->onClick.connect([status, &count]()
+    {
+        count++;
+
+        std::cout << "Button clicked: " << count << '\n';
+
+        status->setTextValue(count);
     });
 
-
-
-    // Layout
-
+    // Vertical layout
     VerticalLayout layout(
         100,
         100,
         40
     );
 
-
     layout.add(title);
     layout.add(status);
     layout.add(button);
 
-
     layout.update();
+
+    // Horizontal layout
     HorizontalLayout hLayout(
         100,
         400,
@@ -126,14 +103,15 @@ std::string hello = "C++ Framework Example";
     );
 
     hLayout.add(subtitle);
+
     hLayout.update();
 
+    // Add subtitle to window
+    window.add(subtitle);
 
-
-    // Window
-
+    // Show window
     window.show();
 
-
-     app.run();
+    return app.run();
 }
+```

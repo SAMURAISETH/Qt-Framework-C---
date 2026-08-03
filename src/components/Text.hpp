@@ -2,7 +2,6 @@
 
 #include "Widget.hpp"
 #include <QLabel>
-#include <string>
 #include <sstream>
 
 class Text : public QLabel, public Widget
@@ -11,13 +10,11 @@ public:
 
     template<typename T>
     Text(T value)
-        : QLabel(),
-          Widget()
+        : QLabel(), Widget()
     {
         object = this;
         setText(value);
     }
-
 
     template<typename T>
     void setText(T value)
@@ -29,7 +26,6 @@ public:
             QString::fromStdString(ss.str())
         );
     }
-
 
     void setTextValue(const char* text);
 
