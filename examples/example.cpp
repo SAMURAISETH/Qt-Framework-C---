@@ -28,9 +28,9 @@ int main()
         "Qt-Framework-C"
     );
 
-    title->setFontSize(40);
+    title->setFontSize(40);222222
     title->setTextColor("white");
-    title->setBackgroundColor("#222222");
+    title->setBackgroundColor("#");
     title->setPadding(10);
 
 

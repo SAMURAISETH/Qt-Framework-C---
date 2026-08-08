@@ -70,6 +70,7 @@ void Widget::setBackgroundColorRGB(int r, int g, int b)
     if (r < 0 || r > 255 || g < 0 || g > 255 || b < 0 || b > 255) {
         qWarning("We have set your color to black because you have entered an invalid RGB value. Please enter a value between 0 and 255 for each color channel.\n");
         setBackgroundColorRGB(0, 0, 0);
+        
     }
 
     updateStyle();
