@@ -28,7 +28,7 @@ int main()
         "Qt-Framework-C"
     );
 
-    title->setFontSize(40);222222
+    title->setFontSize(40);
     title->setTextColor("white");
     title->setBackgroundColor("#");
     title->setPadding(10);
@@ -56,15 +56,15 @@ int main()
     );
 
     button->setBackgroundColorRGB(
-        -10,
-        300,
-        500
+        10,
+        255,
+        255
     );
 
     button->setTextColorRGB(
-        256,
-        -50,
-        -70
+        255,
+        50,
+        70
     );
 
     button->setPadding(
