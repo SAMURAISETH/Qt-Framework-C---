@@ -95,13 +95,13 @@ make
 Make it executable:
 
 ```sh
-chmod +x build.sh
+chmod +x run.sh
 ```
 
 Then run:
 
 ```sh
-./build.sh
+./run.sh
 ```
 
 ### Option 2: Manual Build

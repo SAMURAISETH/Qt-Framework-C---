@@ -6,6 +6,7 @@
 #include "Button.hpp"
 
 #include "VerticalLayout.hpp"
+#include "HorizontalLayout.hpp"
 
 #include <iostream>
 
@@ -48,7 +49,7 @@ int main()
 
     Button* button = window.createButton(
         "Click Me"
-    );
+    ); 
 
     button->setSize(
         150,
@@ -83,10 +84,32 @@ int main()
             "Clicked!"
         );
     });
+    Button* Btton = window.createText("Custom Button");
+
+    Btton->setSize(150, 10);
+    Btton->setBackgroundColorRGB(0,100,59);
+    Btton->setTextColorRGB(255,255,255);
+    Btton->setPadding(20);
+
+    Btton->onClick.connect([Btton])(
+    {
+        std::cout << "Other Button\n";
+        Btton->setTextValue("Hellow World");
+    });
+
 
 
 
     // Layout
+    
+        HorizontalLayout Layout(
+            200, 
+            200, 
+            80
+        );
+
+        Layout.add(Button);
+        Layout.update(); 
 
     VerticalLayout layout(
         100,
@@ -109,5 +132,5 @@ int main()
     window.show();
 
 
-     app.run();
+    app.run();
 }
